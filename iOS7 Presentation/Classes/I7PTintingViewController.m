@@ -10,6 +10,8 @@
 
 @interface I7PTintingViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
 @end
 
 @implementation I7PTintingViewController
@@ -43,6 +45,14 @@
 
 - (IBAction)tintButtonPressed:(id)sender {
     self.view.tintColor = [[self class]randomColor];
+}
+
+- (IBAction)retintContainerButtonPressed:(id)sender {
+    self.containerView.tintColor = [[self class]randomColor];
+}
+
+- (IBAction)clearButtonPressed:(id)sender {
+    self.containerView.tintColor = nil;
 }
 
 +(UIColor*)randomColor{
