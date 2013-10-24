@@ -34,12 +34,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    // Seed the random number generator (once only)
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        srand48(time(0));
-    });
-    
     [self.activityIndicator startAnimating];
 }
 

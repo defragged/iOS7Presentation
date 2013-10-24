@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     I7PMasterViewControllerRowTint,
     I7PMasterViewControllerRowSlowTable,
     I7PMasterViewControllerRowFastTable,
+    I7PMasterViewControllerRowImageTint,
     
     I7PMasterViewControllerRowCount,
 };
@@ -35,6 +36,12 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"Cell"];
+    
+    // Seed the random number generator (once only)
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        srand48(time(0));
+    });
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,6 +74,9 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     
     }else if(I7PMasterViewControllerRowFastTable == indexPath.row){
         cell.textLabel.text = @"Fast Table View";
+    
+    }else if(I7PMasterViewControllerRowImageTint == indexPath.row){
+        cell.textLabel.text = @"Image Tinting";
     }
     
     return cell;
@@ -81,8 +91,12 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
         [self performSegueWithIdentifier:@"PushSlowTable"
                                   sender:tableView];
     
-    }else if(I7PMasterViewControllerRowFastTable){
+    }else if(I7PMasterViewControllerRowFastTable == indexPath.row){
         [self performSegueWithIdentifier:@"PushFastTable"
+                                  sender:tableView];
+    
+    }else if(I7PMasterViewControllerRowImageTint == indexPath.row){
+        [self performSegueWithIdentifier:@"PushImage"
                                   sender:tableView];
     }
 }
