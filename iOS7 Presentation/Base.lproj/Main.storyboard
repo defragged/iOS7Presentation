@@ -36,6 +36,7 @@
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
                     <connections>
                         <segue destination="XtR-3I-KEb" kind="push" identifier="PushTintSegue" id="k4n-Ot-lC6"/>
+                        <segue destination="pru-bS-I6b" kind="push" identifier="PushSlowTable" id="20F-3W-00b"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
@@ -174,7 +175,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAF-kQ-dcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="63"/>
+            <point key="canvasLocation" x="1045" y="64"/>
+        </scene>
+        <!--Slow Table View Controller - Slow Table-->
+        <scene sceneID="iTD-9N-LQF">
+            <objects>
+                <tableViewController id="pru-bS-I6b" customClass="I7PSlowTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Iok-XX-zzn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="pru-bS-I6b" id="wpA-aG-V2s"/>
+                            <outlet property="delegate" destination="pru-bS-I6b" id="h8e-Ui-LMl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Slow Table" id="KBb-He-SZn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgN-UJ-NCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="668"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
