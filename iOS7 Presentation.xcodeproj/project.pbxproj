@@ -29,6 +29,8 @@
 		7C15E56718196C3100B8588A /* I7PFastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56518196C3100B8588A /* I7PFastTableViewController.m */; };
 		7C15E56A1819775D00B8588A /* I7PImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E5691819775D00B8588A /* I7PImageViewController.m */; };
 		7C15E56B1819775D00B8588A /* I7PImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E5691819775D00B8588A /* I7PImageViewController.m */; };
+		7C15E57018197B2700B8588A /* I7PTextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56F18197B2700B8588A /* I7PTextSizeViewController.m */; };
+		7C15E57118197B2700B8588A /* I7PTextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56F18197B2700B8588A /* I7PTextSizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		7C15E56518196C3100B8588A /* I7PFastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PFastTableViewController.m; path = Classes/I7PFastTableViewController.m; sourceTree = "<group>"; };
 		7C15E5681819775D00B8588A /* I7PImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = I7PImageViewController.h; path = Classes/I7PImageViewController.h; sourceTree = "<group>"; };
 		7C15E5691819775D00B8588A /* I7PImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PImageViewController.m; path = Classes/I7PImageViewController.m; sourceTree = "<group>"; };
+		7C15E56E18197B2700B8588A /* I7PTextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = I7PTextSizeViewController.h; path = Classes/I7PTextSizeViewController.h; sourceTree = "<group>"; };
+		7C15E56F18197B2700B8588A /* I7PTextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PTextSizeViewController.m; path = Classes/I7PTextSizeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		7C15E5241819585100B8588A /* iOS7 Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7C15E56D18197B1100B8588A /* Text */,
 				7C15E56C1819776500B8588A /* Image */,
 				7C15E55B1819699E00B8588A /* TableView */,
 				7C15E55618195CDA00B8588A /* Tinting */,
@@ -198,6 +203,15 @@
 				7C15E5691819775D00B8588A /* I7PImageViewController.m */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		7C15E56D18197B1100B8588A /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				7C15E56E18197B2700B8588A /* I7PTextSizeViewController.h */,
+				7C15E56F18197B2700B8588A /* I7PTextSizeViewController.m */,
+			);
+			name = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +317,7 @@
 				7C15E55918195CF900B8588A /* I7PTintingViewController.m in Sources */,
 				7C15E52F1819585100B8588A /* I7PAppDelegate.m in Sources */,
 				7C15E5351819585200B8588A /* I7PMasterViewController.m in Sources */,
+				7C15E57018197B2700B8588A /* I7PTextSizeViewController.m in Sources */,
 				7C15E56A1819775D00B8588A /* I7PImageViewController.m in Sources */,
 				7C15E56218196A0500B8588A /* I7PSlowTableViewController.m in Sources */,
 			);
@@ -317,6 +332,7 @@
 				7C15E56318196A0500B8588A /* I7PSlowTableViewController.m in Sources */,
 				7C15E54D1819585200B8588A /* iOS7_PresentationTests.m in Sources */,
 				7C15E55A18195CF900B8588A /* I7PTintingViewController.m in Sources */,
+				7C15E57118197B2700B8588A /* I7PTextSizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

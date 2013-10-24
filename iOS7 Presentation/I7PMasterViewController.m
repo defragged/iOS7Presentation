@@ -14,6 +14,7 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     I7PMasterViewControllerRowSlowTable,
     I7PMasterViewControllerRowFastTable,
     I7PMasterViewControllerRowImageTint,
+    I7PMasterViewControllerRowText,
     
     I7PMasterViewControllerRowCount,
 };
@@ -77,6 +78,9 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     
     }else if(I7PMasterViewControllerRowImageTint == indexPath.row){
         cell.textLabel.text = @"Image Tinting";
+    
+    }else if(I7PMasterViewControllerRowText == indexPath.row){
+        cell.textLabel.text = @"Text Styles";
     }
     
     return cell;
@@ -97,6 +101,10 @@ typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
     
     }else if(I7PMasterViewControllerRowImageTint == indexPath.row){
         [self performSegueWithIdentifier:@"PushImage"
+                                  sender:tableView];
+    
+    }else if(I7PMasterViewControllerRowText == indexPath.row){
+        [self performSegueWithIdentifier:@"PushText"
                                   sender:tableView];
     }
 }
