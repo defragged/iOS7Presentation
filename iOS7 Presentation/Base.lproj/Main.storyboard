@@ -39,6 +39,7 @@
                         <segue destination="pru-bS-I6b" kind="push" identifier="PushSlowTable" id="20F-3W-00b"/>
                         <segue destination="hHf-PM-bw5" kind="push" identifier="PushFastTable" id="bGh-3U-KJ9"/>
                         <segue destination="L6J-wL-dXK" kind="push" identifier="PushImage" id="xaU-d7-ZSz"/>
+                        <segue destination="ba9-XU-I5f" kind="push" identifier="PushText" id="hnL-J1-iHw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
@@ -63,6 +64,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbx-Ey-ulj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1774" y="672"/>
+        </scene>
+        <!--View Controller - Text Styles-->
+        <scene sceneID="ExC-ln-4LJ">
+            <objects>
+                <viewController id="ba9-XU-I5f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KM9-ru-y4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfu-3k-TeR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ie3-3e-TDh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IT-se-xkd">
+                                <rect key="frame" x="20" y="72" width="66" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Subheadline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mg-91-efU">
+                                <rect key="frame" x="20" y="100" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Body" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-0t-Ybk">
+                                <rect key="frame" x="20" y="129" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Caption 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwT-0N-jW0">
+                                <rect key="frame" x="20" y="158" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Caption 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-Xb-Xyn">
+                                <rect key="frame" x="20" y="187" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Footnote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-Bg-cT7">
+                                <rect key="frame" x="20" y="216" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mwT-0N-jW0" firstAttribute="top" secondItem="hCH-0t-Ybk" secondAttribute="bottom" constant="8" id="HhQ-Os-4Fn"/>
+                            <constraint firstItem="9IT-se-xkd" firstAttribute="leading" secondItem="ie3-3e-TDh" secondAttribute="leading" constant="20" symbolic="YES" id="Lk9-cO-yeZ"/>
+                            <constraint firstItem="7mg-91-efU" firstAttribute="top" secondItem="9IT-se-xkd" secondAttribute="bottom" constant="8" id="UBM-lu-p1K"/>
+                            <constraint firstItem="hCH-0t-Ybk" firstAttribute="top" secondItem="7mg-91-efU" secondAttribute="bottom" constant="8" id="Ys5-uq-px8"/>
+                            <constraint firstItem="9IT-se-xkd" firstAttribute="top" secondItem="KM9-ru-y4f" secondAttribute="bottom" constant="20" symbolic="YES" id="u9j-9n-rtj"/>
+                            <constraint firstItem="YL8-Bg-cT7" firstAttribute="top" secondItem="9uu-Xb-Xyn" secondAttribute="bottom" constant="8" id="xZw-gT-3jz"/>
+                            <constraint firstItem="9uu-Xb-Xyn" firstAttribute="top" secondItem="mwT-0N-jW0" secondAttribute="bottom" constant="8" id="ymz-Lk-IUc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text Styles" id="bdd-Jk-CnB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ay-17-EJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-569"/>
         </scene>
         <!--Tinting View Controller - Tinting-->
         <scene sceneID="t3d-uw-blc">
