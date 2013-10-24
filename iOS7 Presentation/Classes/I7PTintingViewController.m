@@ -11,6 +11,10 @@
 @interface I7PTintingViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UISwitch *toggle;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
 
 @end
 
@@ -35,6 +39,8 @@
     dispatch_once(&onceToken, ^{
         srand48(time(0));
     });
+    
+    [self.activityIndicator startAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +51,13 @@
 
 - (IBAction)tintButtonPressed:(id)sender {
     self.view.tintColor = [[self class]randomColor];
+    
+    // Cheating a little: The tintColour property tints the edge, which isn't obvious
+    self.toggle.onTintColor = self.view.tintColor;
+    
+    self.activityIndicator.color = self.view.tintColor;
+    
+    self.pageControl.currentPageIndicatorTintColor = self.view.tintColor;
 }
 
 - (IBAction)retintContainerButtonPressed:(id)sender {

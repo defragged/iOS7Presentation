@@ -81,19 +81,12 @@
                                 <rect key="frame" x="150" y="233" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0SV-YT-83I">
-                                <rect key="frame" x="20" y="261" width="280" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="DIm-9E-3s9"/>
-                                </constraints>
-                            </progressView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SDX-ss-NZW">
-                                <rect key="frame" x="141" y="269" width="39" height="37"/>
+                                <rect key="frame" x="141" y="261" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0gK-zk-Qs4">
-                                <rect key="frame" x="113" y="314" width="94" height="29"/>
+                                <rect key="frame" x="113" y="306" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </stepper>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiJ-za-ai6">
@@ -146,23 +139,19 @@
                         <constraints>
                             <constraint firstItem="Koa-Ec-jIE" firstAttribute="top" secondItem="WQz-7d-2bC" secondAttribute="bottom" constant="8" id="1da-Zm-IuP"/>
                             <constraint firstAttribute="centerX" secondItem="SDX-ss-NZW" secondAttribute="centerX" constant="-0.5" id="2Ud-8R-3dg"/>
-                            <constraint firstItem="0SV-YT-83I" firstAttribute="leading" secondItem="yqI-dD-AcM" secondAttribute="leading" id="4Q7-Gd-cGn"/>
                             <constraint firstItem="LmC-iz-76o" firstAttribute="top" secondItem="UiJ-za-ai6" secondAttribute="bottom" id="6aJ-fd-6ep"/>
+                            <constraint firstItem="SDX-ss-NZW" firstAttribute="top" secondItem="e3I-gs-0I2" secondAttribute="bottom" constant="8" symbolic="YES" id="Bb5-1v-NWt"/>
                             <constraint firstAttribute="centerX" secondItem="Koa-Ec-jIE" secondAttribute="centerX" constant="-0.5" id="Bn1-DO-7Kc"/>
                             <constraint firstAttribute="centerX" secondItem="e3I-gs-0I2" secondAttribute="centerX" id="DAV-W1-fYi"/>
-                            <constraint firstItem="0SV-YT-83I" firstAttribute="centerX" secondItem="UiJ-za-ai6" secondAttribute="centerX" id="DlH-h6-35D"/>
-                            <constraint firstItem="SDX-ss-NZW" firstAttribute="top" secondItem="0SV-YT-83I" secondAttribute="bottom" constant="8" id="IqM-AN-VcM"/>
                             <constraint firstItem="WQz-7d-2bC" firstAttribute="centerX" secondItem="olY-qc-ZQc" secondAttribute="centerX" id="Kjz-Xs-SAa"/>
                             <constraint firstItem="e3I-gs-0I2" firstAttribute="top" secondItem="HZi-mA-5R2" secondAttribute="bottom" constant="8" id="LUY-z9-2tw"/>
                             <constraint firstItem="WQz-7d-2bC" firstAttribute="top" secondItem="1Pf-OG-0z5" secondAttribute="bottom" constant="15" id="LjP-eK-s3t"/>
                             <constraint firstItem="0gK-zk-Qs4" firstAttribute="top" secondItem="SDX-ss-NZW" secondAttribute="bottom" constant="8" id="OGe-c8-3BW"/>
                             <constraint firstItem="HZi-mA-5R2" firstAttribute="top" secondItem="yqI-dD-AcM" secondAttribute="bottom" constant="8" id="QOc-iX-3jt"/>
                             <constraint firstAttribute="centerX" secondItem="0gK-zk-Qs4" secondAttribute="centerX" id="U42-VM-pFH"/>
-                            <constraint firstItem="0SV-YT-83I" firstAttribute="top" secondItem="e3I-gs-0I2" secondAttribute="bottom" constant="8" id="Wi4-oa-B6s"/>
                             <constraint firstAttribute="centerX" secondItem="HZi-mA-5R2" secondAttribute="centerX" constant="-0.5" id="liG-WD-aO5"/>
                             <constraint firstItem="UiJ-za-ai6" firstAttribute="leading" secondItem="olY-qc-ZQc" secondAttribute="leading" id="n6c-tj-UtZ"/>
                             <constraint firstAttribute="trailing" secondItem="UiJ-za-ai6" secondAttribute="trailing" id="oUU-7z-LLt"/>
-                            <constraint firstItem="0SV-YT-83I" firstAttribute="trailing" secondItem="yqI-dD-AcM" secondAttribute="trailing" id="obg-ZF-TJN"/>
                             <constraint firstAttribute="trailing" secondItem="yqI-dD-AcM" secondAttribute="trailing" constant="20" id="pF3-Vq-raa"/>
                             <constraint firstAttribute="centerX" secondItem="yqI-dD-AcM" secondAttribute="centerX" id="soF-lX-nmv"/>
                             <constraint firstItem="yqI-dD-AcM" firstAttribute="leading" secondItem="olY-qc-ZQc" secondAttribute="leading" constant="20" id="uZZ-BC-ox0"/>
@@ -177,7 +166,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="e3I-gs-0I2" id="hp3-bT-c1F"/>
                         <outlet property="containerView" destination="KHb-UE-woB" id="Zl1-LV-2IM"/>
+                        <outlet property="pageControl" destination="SDX-ss-NZW" id="VcM-GY-HDn"/>
+                        <outlet property="toggle" destination="HZi-mA-5R2" id="68a-X9-HRR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAF-kQ-dcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
