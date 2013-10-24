@@ -34,10 +34,38 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <connections>
+                        <segue destination="XtR-3I-KEb" kind="push" identifier="PushTintSegue" id="k4n-Ot-lC6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
+        </scene>
+        <!--Tinting View Controller - Tinting-->
+        <scene sceneID="t3d-uw-blc">
+            <objects>
+                <viewController id="XtR-3I-KEb" customClass="I7PTintingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Pf-OG-0z5"/>
+                        <viewControllerLayoutGuide type="bottom" id="LmC-iz-76o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="olY-qc-ZQc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tinting" id="Kdi-wX-dsq">
+                        <barButtonItem key="rightBarButtonItem" title="Retint" id="QaS-Ey-dEs">
+                            <connections>
+                                <action selector="tintButtonPressed:" destination="XtR-3I-KEb" id="bUQ-O4-wwa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAF-kQ-dcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="63"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -8,6 +8,13 @@
 
 #import "I7PMasterViewController.h"
 
+typedef NS_ENUM(NSUInteger, I7PMasterViewControllerRow)
+{
+    I7PMasterViewControllerRowTint,
+    
+    I7PMasterViewControllerRowCount,
+};
+
 @interface I7PMasterViewController ()
 
 @end
@@ -43,21 +50,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return I7PMasterViewControllerRowCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+    if(I7PMasterViewControllerRowTint == indexPath.row){
+        cell.textLabel.text = @"Tinting";
+    }
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(I7PMasterViewControllerRowTint == indexPath.row){
+        [self performSegueWithIdentifier:@"PushTintSegue"
+                                  sender:tableView];
+    }
 }
 
 /*
