@@ -38,6 +38,7 @@
                         <segue destination="XtR-3I-KEb" kind="push" identifier="PushTintSegue" id="k4n-Ot-lC6"/>
                         <segue destination="pru-bS-I6b" kind="push" identifier="PushSlowTable" id="20F-3W-00b"/>
                         <segue destination="hHf-PM-bw5" kind="push" identifier="PushFastTable" id="bGh-3U-KJ9"/>
+                        <segue destination="L6J-wL-dXK" kind="push" identifier="PushImage" id="xaU-d7-ZSz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
@@ -61,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbx-Ey-ulj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="696"/>
+            <point key="canvasLocation" x="1774" y="672"/>
         </scene>
         <!--Tinting View Controller - Tinting-->
         <scene sceneID="t3d-uw-blc">
@@ -197,6 +198,59 @@
             </objects>
             <point key="canvasLocation" x="1045" y="64"/>
         </scene>
+        <!--Image View Controller - Images-->
+        <scene sceneID="7Xv-EG-GEB">
+            <objects>
+                <viewController id="L6J-wL-dXK" customClass="I7PImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LOO-SG-U0Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="bT0-8h-QCd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqR-Cq-7UK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-mh-U3T">
+                                <rect key="frame" x="232" y="211" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="X4U-rv-5fh"/>
+                                    <constraint firstAttribute="width" constant="57" id="eqv-1M-sIl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RHT-ns-6hm">
+                                <rect key="frame" x="31" y="211" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="sEJ-Re-i8z"/>
+                                    <constraint firstAttribute="width" constant="57" id="zKg-yF-vFc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zGC-mh-U3T" secondAttribute="centerX" constant="-100" id="0ri-al-09W"/>
+                            <constraint firstAttribute="centerY" secondItem="RHT-ns-6hm" secondAttribute="centerY" constant="0.5" id="6jJ-Fm-kq5"/>
+                            <constraint firstAttribute="centerY" secondItem="zGC-mh-U3T" secondAttribute="centerY" constant="0.5" id="diz-v3-fHb"/>
+                            <constraint firstAttribute="centerX" secondItem="RHT-ns-6hm" secondAttribute="centerX" constant="100" id="tQu-4z-jLm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Images" id="k4i-94-DKk">
+                        <barButtonItem key="rightBarButtonItem" title="Retint" id="kDG-uO-40k">
+                            <connections>
+                                <action selector="retintButtonPressed:" destination="L6J-wL-dXK" id="l60-OH-dfV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="maskedImageView" destination="zGC-mh-U3T" id="KbU-Pq-8vM"/>
+                        <outlet property="normalImageView" destination="RHT-ns-6hm" id="wUq-57-N9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2B-5y-daC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1251"/>
+        </scene>
         <!--Slow Table View Controller - Slow Table-->
         <scene sceneID="iTD-9N-LQF">
             <objects>
@@ -214,9 +268,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgN-UJ-NCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="668"/>
+            <point key="canvasLocation" x="1408" y="672"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="57" height="57"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
