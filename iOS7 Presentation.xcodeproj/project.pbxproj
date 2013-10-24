@@ -25,6 +25,8 @@
 		7C15E55A18195CF900B8588A /* I7PTintingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E55818195CF900B8588A /* I7PTintingViewController.m */; };
 		7C15E56218196A0500B8588A /* I7PSlowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56118196A0500B8588A /* I7PSlowTableViewController.m */; };
 		7C15E56318196A0500B8588A /* I7PSlowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56118196A0500B8588A /* I7PSlowTableViewController.m */; };
+		7C15E56618196C3100B8588A /* I7PFastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56518196C3100B8588A /* I7PFastTableViewController.m */; };
+		7C15E56718196C3100B8588A /* I7PFastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15E56518196C3100B8588A /* I7PFastTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		7C15E55818195CF900B8588A /* I7PTintingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PTintingViewController.m; path = Classes/I7PTintingViewController.m; sourceTree = "<group>"; };
 		7C15E56018196A0500B8588A /* I7PSlowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = I7PSlowTableViewController.h; path = Classes/I7PSlowTableViewController.h; sourceTree = "<group>"; };
 		7C15E56118196A0500B8588A /* I7PSlowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PSlowTableViewController.m; path = Classes/I7PSlowTableViewController.m; sourceTree = "<group>"; };
+		7C15E56418196C3100B8588A /* I7PFastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = I7PFastTableViewController.h; path = Classes/I7PFastTableViewController.h; sourceTree = "<group>"; };
+		7C15E56518196C3100B8588A /* I7PFastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = I7PFastTableViewController.m; path = Classes/I7PFastTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 			children = (
 				7C15E56018196A0500B8588A /* I7PSlowTableViewController.h */,
 				7C15E56118196A0500B8588A /* I7PSlowTableViewController.m */,
+				7C15E56418196C3100B8588A /* I7PFastTableViewController.h */,
+				7C15E56518196C3100B8588A /* I7PFastTableViewController.m */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C15E56618196C3100B8588A /* I7PFastTableViewController.m in Sources */,
 				7C15E52B1819585100B8588A /* main.m in Sources */,
 				7C15E55918195CF900B8588A /* I7PTintingViewController.m in Sources */,
 				7C15E52F1819585100B8588A /* I7PAppDelegate.m in Sources */,
@@ -290,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C15E56718196C3100B8588A /* I7PFastTableViewController.m in Sources */,
 				7C15E56318196A0500B8588A /* I7PSlowTableViewController.m in Sources */,
 				7C15E54D1819585200B8588A /* iOS7_PresentationTests.m in Sources */,
 				7C15E55A18195CF900B8588A /* I7PTintingViewController.m in Sources */,
