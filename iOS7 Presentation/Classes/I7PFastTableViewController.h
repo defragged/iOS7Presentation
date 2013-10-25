@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface I7PFastTableViewController : UITableViewController
+#import "I7PSlowTableViewController.h"
+
+@interface I7PFastTableViewController : I7PSlowTableViewController
 
 @end
