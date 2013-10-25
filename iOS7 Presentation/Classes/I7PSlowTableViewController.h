@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * A tableview with many cells to demonstrate how slow loading variable
+ * height cells can be.
+ */
 @interface I7PSlowTableViewController : UITableViewController
 
 @end

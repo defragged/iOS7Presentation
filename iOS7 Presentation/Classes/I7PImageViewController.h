@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * A view controller to demonstrate template images.
+ *
+ * The retint button tints the view a random colour. The left image is a standard
+ * UImage. The right is the same image with `UIImageRenderingModeAlwaysTemplate`
+ * rendering mode applied.
+ */
 @interface I7PImageViewController : UIViewController
 
 @end
