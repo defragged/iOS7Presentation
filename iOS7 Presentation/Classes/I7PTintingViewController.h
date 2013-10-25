@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * A view controller to demonstrate tinting.
+ *
+ * The button in the navigation bar tints the entire view. The secondary
+ * tint button tints a container view, and the clear button removes the tinting
+ * from the container view.
+ */
 @interface I7PTintingViewController : UIViewController
 
 @end

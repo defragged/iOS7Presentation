@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * A view to demonstrate default text styles.
+ */
 @interface I7PTextSizeViewController : UIViewController
 
 @end

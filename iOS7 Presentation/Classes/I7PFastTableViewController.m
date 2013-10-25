@@ -15,6 +15,8 @@
 @implementation I7PFastTableViewController
 
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // Cells range between 44 + (1…100), so average 50
     return 44 + 50;
 }
 

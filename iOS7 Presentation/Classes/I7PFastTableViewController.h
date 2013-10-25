@@ -10,6 +10,10 @@
 
 #import "I7PSlowTableViewController.h"
 
+/**
+ * An implementation of a `UITableViewController` that uses
+ * tableView:estimatedHeightForRowAtIndexPath: to improve loading performance.
+ */
 @interface I7PFastTableViewController : I7PSlowTableViewController
 
 @end
